@@ -1,12 +1,16 @@
 <template>
-  <div class="container">
-    <div class="row">
-      <Post
-        v-for="article in articles"
-        :key="article.title"
-        :postProp="article"
-      />
+  <div>
+    <Header />
+    <div class="container">
+      <div class="row">
+        <Post
+          v-for="article in articles"
+          :key="article.title"
+          :postProp="article"
+        />
+      </div>
     </div>
+    <Footer />
   </div>
 </template>
 
